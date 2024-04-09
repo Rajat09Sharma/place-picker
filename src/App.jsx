@@ -21,7 +21,7 @@ function App() {
       const sortedAvailablePlaces = sortPlacesByDistance(
         AVAILABLE_PLACES,
         position.coords.latitude,
-        position.coords.altitude
+        position.coords.longitude
       );
       setAvailableSortedPlaces(sortedAvailablePlaces);
     })
